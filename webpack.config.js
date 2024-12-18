@@ -43,13 +43,13 @@ module.exports = {
             remotes: {
                 "HomeApp": 'HomeApp@http://localhost:3000/remoteEntry.js',
             },
-            shared: {  // and shared
-                ...dependencies,  // some other dependencies
-                react: { // react
+            shared: {  
+                ...dependencies,  
+                react: { 
                     singleton: true,
                     requiredVersion: dependencies["react"],
                 },
-                "react-dom": { // react-dom
+                "react-dom": { 
                     singleton: true,
                     requiredVersion: dependencies["react-dom"],
                 },

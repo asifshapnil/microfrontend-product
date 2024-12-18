@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'; // React imports
-import { useStore } from 'HomeApp/store'; // Import useStore from the remote store
-import './App.css'; // CSS file for styling
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS import
+import React, { useEffect, useState } from 'react'; 
+import { useStore } from 'HomeApp/store'; 
+import './App.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
-  const { state } = useStore(); // Get state from the store
+  const { state } = useStore(); 
   const [products, setProducts] = useState([]);
 
   // Fetch products from state and set to local state
